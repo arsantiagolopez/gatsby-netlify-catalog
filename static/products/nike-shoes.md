@@ -1,5 +1,5 @@
 ---
-category: clothing
+category: sports
 title: Nike Shoes
 price: 70
 summary: All black stylish Nike shoes
