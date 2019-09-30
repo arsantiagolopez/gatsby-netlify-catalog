@@ -1,0 +1,23 @@
+/* Optional CSS Styling */
+
+/* Make underline thicker, and change to yellow/gold gradient color */
+.ui.secondary.pointing.menu .active.item,
+.ui.secondary.pointing.menu .active.item:hover {
+  border: none;
+  border-bottom-width: 6px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #fcff00, #f8d800) 0 0 1 0;
+}
+.ui.secondary.pointing.menu .item {
+  border-bottom-width: 6px;
+}
+
+/* Hide scrollbar in Chrome */
+#navContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide NavBar border */
+.ui.huge.pointing.secondary.menu {
+  border: none;
+}

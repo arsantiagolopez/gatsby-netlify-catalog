@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - label: "Products"
+    name: "products"
+    description: "Add or delete your products here."
+    folder: "static/products"
+    delete: true
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Category",
+          name: "category",
+          widget: "relation",
+          collection: "categories",
+          searchFields: ["name"],
+          valueField: "name",
+          required: true,
+        }
+      - {
+          label: "Product Name",
+          name: "title",
+          widget: "string",
+          required: true,
+        }
+      - { label: "Price", name: "price", widget: "number", valueType: "float", required: true }
+      - {
+          label: "Short Description",
+          name: "summary",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Long Description",
+          name: "description",
+          widget: "string",
+          required: true,
+        }
+      - {
+          label: "Image",
+          name: "featuredImage",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Date",
+          name: "dateCreated",
+          widget: "datetime",
+          default: "",
+          timeFormat: false,
+          required: true,
+        }
+  - label: "Categories"
+    name: "categories"
+    description: "Add or delete your categories here. Categories must first be added to then appear as an option to select on products."
+    folder: "static/categories"
+    delete: true
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    fields:
+      - {
+          label: "Category Name",
+          name: "name",
+          widget: "string",
+          required: true,
+        }
