@@ -1,6 +1,6 @@
 ---
 category: pets
-title: Cute Lady Magnet Puppy
+title: Andalucia
 price: 1200
 summary: Look at those eyes.
 description: Woof woof?
