@@ -4,7 +4,7 @@
 
 Simple catalog implementation with React and Gatsby. Styled with Semantic-UI, hosted by Netlify and maintained by Netlify CMS. Think eCommerce without the credit card integration. Great for local businesses.
 
-Check out my working example here: [https://www.gatsby-netlify-catalog.netlify.com/](https://gatsby-netlify-catalog.netlify.app)
+Check out my working example here: [https://gatsby-netlify-catalog.netlify.app](https://gatsby-netlify-catalog.netlify.app)
 
 This project was heavily influenced by parmsang's [gatsby-starter-ecommerce](https://github.com/parmsang/gatsby-starter-ecommerce) repository. All props go to him. I recreated his platform and tweaked it to meet my cousin's local business needs, with the goal of learning Gatsby's more powerful features and dive into Semantic-UI's beautiful styling.
 
